@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday 🎉</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Audio -->
+  <audio id="bgMusic" loop>
+    <source src="never.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Tap to Start Overlay -->
+  <div id="tapOverlay">
+    🎵 Tap anywhere to start the birthday magic! 🎉
+  </div>
+
+  <div class="card">
+    <h1>🎂 Happy Birthday!</h1>
+    <h2>para sa ate kong toyoin</h2>
+    <button id="surpriseBtn">Tap for a Surprise 🎁</button>
+
+    <!-- Surprise Message + Slideshow -->
+    <div id="surprise" class="surprise hidden">
+      Wishing you a day filled with love, laughter, and unforgettable memories. <br>
+      May all your dreams come true today and always ✨
+      🎉 You are loved more than you know! 🎉<br>
+      💕 Enjoy your special day 💕
+      <div class="slideshow-container">
+        <img src="ate1.jpg" alt="Memory 1" class="slide active">
+        <img src="ate2.jpg" alt="Memory 2" class="slide">
+        <img src="ate3.jpg" alt="Memory 3" class="slide">
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
